@@ -83,6 +83,7 @@
   },
   "homepage": "https://github.com/pmndrs/tunnel-rat#readme",
   "dependencies": {
+    "motion": "^11.11.17",
     "zustand": "^4.3.2"
   }
 }

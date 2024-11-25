@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import { create, StoreApi } from 'zustand'
 import { useIsomorphicLayoutEffect } from './utils'
+import { AnimatePresence } from 'motion/react'
 
 type Props = { children: React.ReactNode }
 
@@ -50,7 +51,7 @@ export default function tunnel() {
 
     Out: () => {
       const current = useStore((state) => state.current)
-      return <>{current}</>
+      return <AnimatePresence>{current}</AnimatePresence>
     },
   }
 }
